@@ -5,6 +5,9 @@ namespace CandidateTestTask.DataAccess.Context;
 
 public class AppDbContext : DbContext
 {
+    public AppDbContext(DbContextOptions options) : base(options)
+    {
+    }
     public DbSet<Candidate> Candidates { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
