@@ -14,6 +14,6 @@ public class Candidate
     public required string Email { get; set; }
     public string? LinkedInUrl { get; set; }
     public string? GitHubUrl { get; set; }
-    public string? Comment { get; set; }
+    public required string Comment { get; set; }
 
 }
