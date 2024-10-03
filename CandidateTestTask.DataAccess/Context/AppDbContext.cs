@@ -18,6 +18,9 @@ public class AppDbContext : DbContext
         {
             options.HasIndex(c => c.Email)
             .IsUnique();
+
+            options.HasIndex(c => new {c.FirstName, c.LastName})
+            .IsUnique();
         });
     }
 }
