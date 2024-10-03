@@ -16,10 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\CandidateTestTask.Application\CandidateTestTask.Application.csproj" />
   </ItemGroup>
 
